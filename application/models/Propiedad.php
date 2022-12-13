@@ -7,6 +7,8 @@ class  Propiedad extends CI_Model
         parent::__construct(); //invocando a la clase padre
     }
     //funcion par aconsultar los datos de la tabla 
+
+    
     function obtenerTodos(){
         $this->db->order_by("id_loc","asc");
         // ordenar de forma ascednete con el id
